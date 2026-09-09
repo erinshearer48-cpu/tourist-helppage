@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Profile — Tour Guide</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;}</style>
+  <link rel="stylesheet" href="assets/tailwind.css">
+  <link rel="stylesheet" href="assets/reference-overrides.css">
+</head>
+<body class="bg-white text-navy">
+
+<!-- HEADER -->
+<header class="border-b border-gray-100">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+    <a href="index.html" class="text-2xl font-semibold tracking-wide">tour guide</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+      <a href="index.html" class="hover:text-navy">Home</a>
+      <a href="index.html" class="hover:text-navy">About Us</a>
+      <a href="city-listing.html" class="hover:text-navy">Popular Destinations</a>
+      <a href="city-listing.html" class="hover:text-navy">Our Packages</a>
+      <a href="mailto:help@tourguide.example" class="hover:text-navy">Help</a>
+    </nav>
+    <a href="my-profile.html" class="bg-gold text-navy text-sm font-semibold px-6 py-2.5 rounded">Sign In</a>
+  </div>
+</header>
+
+<!-- PAGE TITLE -->
+<section class="bg-sand py-8">
+  <div class="max-w-5xl mx-auto px-6">
+    <h1 class="text-2xl font-semibold mb-1">My Profile</h1>
+    <p class="text-gray-500 text-sm">Home / My Profile</p>
+  </div>
+</section>
+
+<section class="max-w-5xl mx-auto px-6 py-10">
+  <div class="grid grid-cols-1 md:grid-cols-3 bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="p-8 border-b md:border-b-0 md:border-r border-gray-100 text-center">
+      <div class="relative w-28 h-28 mx-auto mb-4">
+        <img src="img/profile-avatar.jpg?w=200&q=80" class="w-28 h-28 rounded-full object-cover" alt="Masum Rana" />
+        <button class="absolute bottom-0 right-0 w-8 h-8 bg-teal rounded-full flex items-center justify-center text-white text-sm">✎</button>
+      </div>
+      <h2 class="font-semibold text-lg mb-1">Masum Rana</h2>
+      <p class="text-xs text-gray-400 mb-6">📍 Gothenburg &nbsp;|&nbsp; 🎂 15th February</p>
+
+      <nav class="text-left space-y-1 text-sm">
+        <a href="my-profile.html" class="block bg-teal text-white font-medium rounded-lg px-4 py-3">Profile Informations</a>
+        <button type="button" class="block w-full text-left text-gray-600 hover:bg-gray-50 rounded-lg px-4 py-3">Booking History</button>
+        <button type="button" class="block w-full text-left text-gray-600 hover:bg-gray-50 rounded-lg px-4 py-3">Newsletter Subscription</button>
+        <button type="button" class="block w-full text-left text-gray-600 hover:bg-gray-50 rounded-lg px-4 py-3">Manage Notifications</button>
+      </nav>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="md:col-span-2 p-8">
+      <h3 class="font-semibold text-lg mb-6">Personal Information</h3>
+
+      
+      <div class="space-y-5 mb-8">
+        <div>
+          <label class="text-sm font-medium block mb-1.5">Name:</label>
+          <input type="text" value="Masum Rana" class="w-full bg-gray-50 border border-gray-100 rounded-lg px-4 py-2.5 text-sm" />
+        </div>
+        <div>
+          <label class="text-sm font-medium block mb-1.5">Date Of Birth</label>
+          <input type="text" value="15/03/1886" class="w-full bg-gray-50 border border-gray-100 rounded-lg px-4 py-2.5 text-sm" />
+        </div>
+        <div>
+          <label class="text-sm font-medium block mb-1.5">Phone</label>
+          <input type="text" value="+46-7644 394 68" class="w-full bg-gray-50 border border-gray-100 rounded-lg px-4 py-2.5 text-sm" />
+        </div>
+        <div>
+          <label class="text-sm font-medium block mb-1.5">Location</label>
+          <input type="text" value="Gothenburg" class="w-full bg-gray-50 border border-gray-100 rounded-lg px-4 py-2.5 text-sm" />
+        </div>
+        <button class="bg-teal text-white font-medium rounded-lg px-8 py-2.5 text-sm">Save</button>
+      </div>
+
+      <hr class="border-gray-100 mb-8">
+
+      <h3 class="font-semibold text-lg mb-6">Security</h3>
+      <div class="space-y-5">
+        <div>
+          <label class="text-sm font-medium block mb-1.5">Email Address</label>
+          <input type="email" value="masumrana15@gmail.com" class="w-full bg-gray-50 border border-gray-100 rounded-lg px-4 py-2.5 text-sm" />
+        </div>
+        <div>
+          <label class="text-sm font-medium block mb-1.5">Password</label>
+          <input type="password" value="**********" class="w-full bg-gray-50 border border-gray-100 rounded-lg px-4 py-2.5 text-sm" />
+        </div>
+        <div>
+          <label class="text-sm font-medium block mb-1.5">Confirm Password</label>
+          <input type="password" value="**********" class="w-full bg-gray-50 border border-gray-100 rounded-lg px-4 py-2.5 text-sm" />
+        </div>
+        <button class="bg-teal text-white font-medium rounded-lg px-8 py-2.5 text-sm">Save</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy text-white mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+    <div>
+      <p class="font-semibold mb-4">Language</p>
+      <select class="w-full bg-white/10 rounded-lg px-3 py-2 mb-6 text-white">
+        <option>English (UK)</option>
+      </select>
+      <p class="font-semibold mb-4">Currency</p>
+      <select class="w-full bg-white/10 rounded-lg px-3 py-2 text-white">
+        <option>U.S. Dollar ($)</option>
+      </select>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Company</p>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="index.html#latest-stories">Blog</a></li>
+        <li><a href="index.html">Press Room</a></li>
+        <li><a href="mailto:careers@tourguide.example">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Help</p>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="mailto:help@tourguide.example">Contact us</a></li>
+        <li><a href="mailto:help@tourguide.example">FAQs</a></li>
+        <li><a href="index.html">Terms and conditions</a></li>
+        <li><a href="index.html">Privacy policy</a></li>
+        <li><a href="index.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Payment methods possible</p>
+      <div class="flex flex-wrap gap-2 mb-6" aria-label="Accepted payment methods">
+        <img src="img/mastercard.svg" class="w-12 h-7 object-contain" alt="Mastercard" />
+        <img src="img/visa.svg" class="w-12 h-7 object-contain" alt="Visa" />
+        <img src="img/american-express.svg" class="w-12 h-7 object-contain" alt="American Express" />
+        <img src="img/paypal.svg" class="w-12 h-7 object-contain" alt="PayPal" />
+        <img src="img/google-pay.svg" class="w-12 h-7 object-contain" alt="Google Pay" />
+        <img src="img/apple-pay.svg" class="w-12 h-7 object-contain" alt="Apple Pay" />
+      </div>
+      <p class="font-semibold mb-2">Company</p>
+      <a href="mailto:guides@tourguide.example" class="text-white/70">Become a Tour guide for Us</a>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-6 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
+      <p>Copyright 2021 Tour Guide. All Rights Reserved</p>
+      <div class="flex items-center gap-3">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v8h4v-8h3.3l.7-4H13V9c0-.7.3-1 1-1Z"/></svg></a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.4L2.8 2h6.4l4.4 5.8L18.9 2Zm-1.1 17.8h1.7L8.3 4.1H6.5L17.8 19.8Z"/></svg></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".75" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-1.6 0-3.5.4-5.1l1.1-4.6s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.4-.9 3.7-.3 1.1.6 2 1.7 2 2 0 3.6-2.1 3.6-5.1 0-2.7-1.9-4.5-4.7-4.5-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2.1.9 2.7.1.1.1.2.1.4l-.3 1.2c-.1.4-.4.5-.8.3-1.5-.7-2.4-2.8-2.4-4.5 0-3.7 2.7-7.1 7.8-7.1 4.1 0 7.3 2.9 7.3 6.8 0 4.1-2.6 7.4-6.2 7.4-1.2 0-2.3-.6-2.7-1.3l-.7 2.8c-.3 1.2-1.1 2.8-1.6 3.7.9.3 1.9.5 2.9.5A10 10 0 0 0 12 2Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

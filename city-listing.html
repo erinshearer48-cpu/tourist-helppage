@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Things To Do In London — Tour Guide</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;}</style>
+  <link rel="stylesheet" href="assets/tailwind.css">
+  <link rel="stylesheet" href="assets/reference-overrides.css">
+</head>
+<body class="bg-white text-navy">
+
+<!-- HEADER -->
+<header class="border-b border-gray-100">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+    <a href="index.html" class="text-2xl font-semibold tracking-wide">tour guide</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+      <a href="index.html" class="hover:text-navy">Home</a>
+      <a href="index.html" class="hover:text-navy">About Us</a>
+      <a href="city-listing.html" class="hover:text-navy">Popular Destinations</a>
+      <a href="city-listing.html" class="hover:text-navy">Our Packages</a>
+      <a href="mailto:help@tourguide.example" class="hover:text-navy">Help</a>
+    </nav>
+    <a href="my-profile.html" class="bg-gold text-navy text-sm font-semibold px-6 py-2.5 rounded">Sign In</a>
+  </div>
+</header>
+
+<!-- PAGE TITLE -->
+<section class="bg-sand py-8">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <div>
+      <h1 class="text-2xl font-semibold mb-1">Things To Do In London</h1>
+      <p class="text-gray-500 text-sm">49 Activities Found</p>
+    </div>
+    <div class="hidden sm:flex items-center gap-3 text-sm">
+      <span class="text-gray-500">Sort by:</span>
+      <select class="border border-gray-200 rounded-lg px-4 py-2 bg-white">
+        <option>Popularity</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Rating</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="max-w-7xl mx-auto px-6 py-10">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+    <!-- SIDEBAR FILTERS -->
+    <aside class="lg:col-span-1 space-y-6">
+      <div class="border border-gray-200 rounded-xl p-5">
+        <h3 class="font-semibold mb-4">Availability</h3>
+        <label class="text-xs text-gray-400 block mb-1">From</label>
+        <input type="date" value="2021-10-12" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-4" />
+        <label class="text-xs text-gray-400 block mb-1">To</label>
+        <input type="date" value="2021-10-12" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-4" />
+        <button class="w-full bg-teal text-white text-sm font-medium rounded-lg py-2.5">Check Availability</button>
+      </div>
+
+      <div class="border border-gray-200 rounded-xl p-5">
+        <h3 class="font-semibold mb-4">Theme</h3>
+        <div class="space-y-3 text-sm text-gray-600">
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal" checked> Water activities</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Good for social distancing</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Adrenaline</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Nature</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Hidden gems</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Street art &amp; graffiti</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Food</label>
+        </div>   
+        <button class="text-teal text-sm font-medium mt-4">Show More Destinations</button>
+      </div>
+
+      <div class="border border-gray-200 rounded-xl p-5">
+        <h3 class="font-semibold mb-4">Duration</h3>
+        <div class="space-y-3 text-sm text-gray-600">
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> 0–3 hours</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> 3–5 hours</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> 5–7 hours</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Full day (7+ hours)</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Multi-day</label>
+        </div>
+      </div>
+
+      <div class="border border-gray-200 rounded-xl p-5">
+        <h3 class="font-semibold mb-4">Destination</h3>
+        <div class="space-y-3 text-sm text-gray-600">
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Biscayne Bay</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Downtown Miami</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Wynwood Arts District</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Port of Miami</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Everglades National Park</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Fisher Island</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="rounded text-teal"> Coconut Grove</label>
+        </div>
+        <button class="text-teal text-sm font-medium mt-4">Show More Destinations</button>
+      </div>
+    </aside>
+
+    <!-- ACTIVITY LIST -->
+    <div class="lg:col-span-3 space-y-5">
+      <!-- repeatable list item -->
+      <a href="city-tour.html" class="flex flex-col sm:flex-row gap-4 border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">
+        <img src="img/tower-bridge.jpg?w=300&q=80" class="w-full sm:w-40 h-32 object-cover rounded-lg" alt="Tower Bridge" />
+        <div class="flex-1">
+          <span class="inline-block bg-teal/10 text-teal text-xs font-semibold px-2.5 py-1 rounded mb-2">WATER ACTIVITIES</span>
+          <h3 class="font-semibold mb-1">Westminster to Greenwich River Thames</h3>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ (584 reviews)</p>
+          <div class="flex items-center gap-4 text-xs text-gray-400">
+            <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family Plan</span>
+          </div>
+        </div>
+        <div class="text-right shrink-0">
+          <p class="text-teal font-semibold text-lg">$35.00</p>
+          <p class="text-xs text-gray-400">per person</p>
+        </div>
+      </a>
+      <a href="city-tour.html" class="flex flex-col sm:flex-row gap-4 border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">
+        <img src="img/mountain-valley.jpg?w=300&q=80" class="w-full sm:w-40 h-32 object-cover rounded-lg" alt="mountains" />
+        <div class="flex-1">
+          <span class="inline-block bg-teal/10 text-teal text-xs font-semibold px-2.5 py-1 rounded mb-2">WATER ACTIVITIES</span>
+          <h3 class="font-semibold mb-1">Westminster to Greenwich River Thames</h3>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ (584 reviews)</p>
+          <div class="flex items-center gap-4 text-xs text-gray-400">
+            <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family Plan</span>
+          </div>
+        </div>
+        <div class="text-right shrink-0">
+          <p class="text-teal font-semibold text-lg">$35.00</p>
+          <p class="text-xs text-gray-400">per person</p>
+        </div>
+      </a>
+      <a href="city-tour.html" class="flex flex-col sm:flex-row gap-4 border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">
+        <img src="img/london-skyline.jpg?w=300&q=80" class="w-full sm:w-40 h-32 object-cover rounded-lg" alt="London skyline" />
+        <div class="flex-1">
+          <span class="inline-block bg-teal/10 text-teal text-xs font-semibold px-2.5 py-1 rounded mb-2">WATER ACTIVITIES</span>
+          <h3 class="font-semibold mb-1">Westminster to Greenwich River Thames</h3>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ (584 reviews)</p>
+          <div class="flex items-center gap-4 text-xs text-gray-400">
+            <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family Plan</span>
+          </div>
+        </div>
+        <div class="text-right shrink-0">
+          <p class="text-teal font-semibold text-lg">$35.00</p>
+          <p class="text-xs text-gray-400">per person</p>
+        </div>
+      </a>
+      <a href="city-tour.html" class="flex flex-col sm:flex-row gap-4 border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">
+        <img src="img/london-street.jpg?w=300&q=80" class="w-full sm:w-40 h-32 object-cover rounded-lg" alt="street" />
+        <div class="flex-1">
+          <span class="inline-block bg-teal/10 text-teal text-xs font-semibold px-2.5 py-1 rounded mb-2">WATER ACTIVITIES</span>
+          <h3 class="font-semibold mb-1">Westminster to Greenwich River Thames</h3>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ (584 reviews)</p>
+          <div class="flex items-center gap-4 text-xs text-gray-400">
+            <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family Plan</span>
+          </div>
+        </div>
+        <div class="text-right shrink-0">
+          <p class="text-teal font-semibold text-lg">$35.00</p>
+          <p class="text-xs text-gray-400">per person</p>
+        </div>
+      </a>
+      <a href="city-tour.html" class="flex flex-col sm:flex-row gap-4 border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">
+        <img src="img/big-ben.jpg?w=300&q=80" class="w-full sm:w-40 h-32 object-cover rounded-lg" alt="Big Ben" />
+        <div class="flex-1">
+          <span class="inline-block bg-teal/10 text-teal text-xs font-semibold px-2.5 py-1 rounded mb-2">WATER ACTIVITIES</span>
+          <h3 class="font-semibold mb-1">Westminster to Greenwich River Thames</h3>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ (584 reviews)</p>
+          <div class="flex items-center gap-4 text-xs text-gray-400">
+            <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family Plan</span>
+          </div>
+        </div>
+        <div class="text-right shrink-0">
+          <p class="text-teal font-semibold text-lg">$35.00</p>
+          <p class="text-xs text-gray-400">per person</p>
+        </div>
+      </a>
+      <a href="city-tour.html" class="flex flex-col sm:flex-row gap-4 border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">
+        <img src="img/london-bridge-sunrise.jpg?w=300&q=80" class="w-full sm:w-40 h-32 object-cover rounded-lg" alt="London bridge sunrise" />
+        <div class="flex-1">
+          <span class="inline-block bg-teal/10 text-teal text-xs font-semibold px-2.5 py-1 rounded mb-2">WATER ACTIVITIES</span>
+          <h3 class="font-semibold mb-1">Westminster to Greenwich River Thames</h3>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ (584 reviews)</p>
+          <div class="flex items-center gap-4 text-xs text-gray-400">
+            <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family Plan</span>
+          </div>
+        </div>
+        <div class="text-right shrink-0">
+          <p class="text-teal font-semibold text-lg">$35.00</p>
+          <p class="text-xs text-gray-400">per person</p>
+        </div>
+      </a>
+
+      <button class="w-full border border-teal text-teal font-medium rounded-full py-3 mt-4">Load More</button>
+    </div>
+  </div>
+</section>
+
+<!-- OUTSIDE THE CITY SPECIALS -->
+<section class="bg-sand py-14">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-2xl font-semibold mb-8">Outside The City Specials</h2>
+
+    <div class="mb-4 flex items-center justify-between">
+      <span class="bg-teal text-white text-xs font-semibold px-4 py-1.5 rounded-full">WATER ACTIVITIES</span>
+      <div class="flex items-center gap-2">
+        <button class="w-8 h-8 rounded-full border border-gray-200 bg-white flex items-center justify-center">‹</button>
+        <button class="w-8 h-8 rounded-full bg-gold flex items-center justify-center">›</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mb-10">
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/mountain-valley.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="mountains" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Westminster to Greenwich</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/aurora.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="aurora" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Vintage Double Decker Bus</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/lake.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="lake" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Magic of London Tour</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/forest-fields.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="forest" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Magic of London Tour</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4 flex items-center justify-between">
+      <span class="bg-blue-400 text-white text-xs font-semibold px-4 py-1.5 rounded-full">SPECIAL FOODS</span>
+      <div class="flex items-center gap-2">
+        <button class="w-8 h-8 rounded-full border border-gray-200 bg-white flex items-center justify-center">‹</button>
+        <button class="w-8 h-8 rounded-full bg-gold flex items-center justify-center">›</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mb-10">
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/rainforest.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="rainforest" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Westminster to Greenwich</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/waterfall.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="waterfall" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Vintage Double Decker Bus</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/snowy-mountain.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="bridge" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Magic of London Tour</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/green-leaves.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="leaves" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Magic of London Tour</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4 flex items-center justify-between">
+      <span class="bg-red-400 text-white text-xs font-semibold px-4 py-1.5 rounded-full">RIVER ACTIVITY</span>
+      <div class="flex items-center gap-2">
+        <button class="w-8 h-8 rounded-full border border-gray-200 bg-white flex items-center justify-center">‹</button>
+        <button class="w-8 h-8 rounded-full bg-gold flex items-center justify-center">›</button>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/monstera-plant.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="monstera" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Westminster to Greenwich</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/forest-fields.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="fields" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Vintage Double Decker Bus</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/mountain-peak.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="peak" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Magic of London Tour</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden">
+        <img src="img/forest-fog.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="forest fog" />
+        <div class="p-3">
+          <p class="text-sm font-semibold mb-1">Magic of London Tour</p>
+          <p class="text-xs text-gray-400 mb-2">★★★★☆ 584 reviews</p>
+          <p class="text-teal font-semibold">$35.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FROM THE GALLERY -->
+<section class="max-w-7xl mx-auto px-6 py-14">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-semibold mb-2">From The Gallery</h2>
+      <p class="text-gray-500 text-sm max-w-md">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+    </div>
+    <button class="bg-navy text-white text-sm px-5 py-2.5 rounded-lg">View All Images</button>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="img/rainforest.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/lake.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/snowy-mountain.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/forest-fields.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/travel-landscape.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/mountain-lake.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/wildlife-bird.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/coastal-beach.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+  </div>
+</section>
+
+<!-- LATEST STORIES -->
+<section class="max-w-7xl mx-auto px-6 py-6 pb-16">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-semibold mb-2">Latest Stories From The City</h2>
+      <p class="text-gray-500 text-sm max-w-md">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+    </div>
+    <button class="bg-navy text-white text-sm px-5 py-2.5 rounded-lg">View All Posts</button>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <article>
+      <img src="img/wellness-story.jpg?w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3" alt="story" />
+      <p class="text-xs text-gray-400 mb-1">Jackie Moncado</p>
+      <h4 class="font-semibold text-sm">7 Signs and Symptoms of Iodine Deficiency</h4>
+    </article>
+    <article>
+      <img src="img/sleep-story.jpg?w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3" alt="story" />
+      <p class="text-xs text-gray-400 mb-1">Jackie Moncado</p>
+      <h4 class="font-semibold text-sm">How to Fix Your Sleep Schedule: 7 Easy Ways</h4>
+    </article>
+    <article>
+      <img src="img/cinnamon-story.jpg?w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3" alt="story" />
+      <p class="text-xs text-gray-400 mb-1">Jackie Moncado</p>
+      <h4 class="font-semibold text-sm">10 Proven Health Benefits of Cinnamon</h4>
+    </article>
+    <article>
+      <img src="img/turmeric-story.jpg?w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3" alt="story" />
+      <p class="text-xs text-gray-400 mb-1">Jackie Moncado</p>
+      <h4 class="font-semibold text-sm">11 Health Benefits of Turmeric and Curcumin</h4>
+    </article>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy text-white">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+    <div>
+      <p class="font-semibold mb-4">Language</p>
+      <select class="w-full bg-white/10 rounded-lg px-3 py-2 mb-6 text-white">
+        <option>English (UK)</option>
+      </select>
+      <p class="font-semibold mb-4">Currency</p>
+      <select class="w-full bg-white/10 rounded-lg px-3 py-2 text-white">
+        <option>U.S. Dollar ($)</option>
+      </select>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Company</p>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="index.html#latest-stories">Blog</a></li>
+        <li><a href="index.html">Press Room</a></li>
+        <li><a href="mailto:careers@tourguide.example">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Help</p>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="mailto:help@tourguide.example">Contact us</a></li>
+        <li><a href="mailto:help@tourguide.example">FAQs</a></li>
+        <li><a href="index.html">Terms and conditions</a></li>
+        <li><a href="index.html">Privacy policy</a></li>
+        <li><a href="index.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Payment methods possible</p>
+      <div class="flex flex-wrap gap-2 mb-6" aria-label="Accepted payment methods">
+        <img src="img/mastercard.svg" class="w-12 h-7 object-contain" alt="Mastercard" />
+        <img src="img/visa.svg" class="w-12 h-7 object-contain" alt="Visa" />
+        <img src="img/american-express.svg" class="w-12 h-7 object-contain" alt="American Express" />
+        <img src="img/paypal.svg" class="w-12 h-7 object-contain" alt="PayPal" />
+        <img src="img/google-pay.svg" class="w-12 h-7 object-contain" alt="Google Pay" />
+        <img src="img/apple-pay.svg" class="w-12 h-7 object-contain" alt="Apple Pay" />
+      </div>
+      <p class="font-semibold mb-2">Company</p>
+      <a href="mailto:guides@tourguide.example" class="text-white/70">Become a Tour guide for Us</a>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-6 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
+      <p>Copyright 2021 Tour Guide. All Rights Reserved</p>
+      <div class="flex items-center gap-3">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v8h4v-8h3.3l.7-4H13V9c0-.7.3-1 1-1Z"/></svg></a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.4L2.8 2h6.4l4.4 5.8L18.9 2Zm-1.1 17.8h1.7L8.3 4.1H6.5L17.8 19.8Z"/></svg></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".75" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-1.6 0-3.5.4-5.1l1.1-4.6s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.4-.9 3.7-.3 1.1.6 2 1.7 2 2 0 3.6-2.1 3.6-5.1 0-2.7-1.9-4.5-4.7-4.5-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2.1.9 2.7.1.1.1.2.1.4l-.3 1.2c-.1.4-.4.5-.8.3-1.5-.7-2.4-2.8-2.4-4.5 0-3.7 2.7-7.1 7.8-7.1 4.1 0 7.3 2.9 7.3 6.8 0 4.1-2.6 7.4-6.2 7.4-1.2 0-2.3-.6-2.7-1.3l-.7 2.8c-.3 1.2-1.1 2.8-1.6 3.7.9.3 1.9.5 2.9.5A10 10 0 0 0 12 2Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

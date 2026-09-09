@@ -1,0 +1,78 @@
+/* Reference-matched refinements for the static offline pages. */
+:root {
+  --reference-teal: #78c0b4;
+  --reference-navy: #142943;
+  --reference-sand: #f7f8fb;
+}
+
+body {
+  color: var(--reference-navy);
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+header .text-2xl {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+}
+
+.bg-sand {
+  background-color: var(--reference-sand) !important;
+}
+
+.bg-teal {
+  background-color: var(--reference-teal);
+}
+
+.text-teal {
+  color: var(--reference-teal);
+}
+
+input,
+select {
+  color: #435267;
+}
+
+input.bg-gray-50,
+select.bg-white {
+  background-color: #f4f4f5;
+}
+
+@media (min-width: 768px) {
+  section.max-w-5xl {
+    max-width: 1070px;
+  }
+
+  section.max-w-5xl > div.grid {
+    grid-template-columns: 300px minmax(0, 1fr);
+  }
+
+  section.max-w-5xl > div.grid > div:first-child {
+    padding: 40px 0 0;
+  }
+
+  section.max-w-5xl > div.grid > div:last-child {
+    padding: 40px;
+  }
+}
+
+footer {
+  background-color: var(--reference-navy) !important;
+}
+
+footer .bg-white\/10 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+footer a:hover {
+  color: #fff;
+}

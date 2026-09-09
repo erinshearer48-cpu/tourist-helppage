@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tour Guide — We Find The Best Tours For You</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;}</style>
+  <link rel="stylesheet" href="assets/tailwind.css">
+  <link rel="stylesheet" href="assets/reference-overrides.css">
+</head>
+<body class="bg-white text-navy">
+
+<!-- HEADER -->
+<header class="absolute top-0 left-0 right-0 z-20">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-6">
+    <a href="index.html" class="text-2xl font-semibold tracking-wide text-white">tour guide</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-white">
+      <a href="index.html" class="border-b-2 border-white pb-1">Home</a>
+      <a href="index.html" class="opacity-90 hover:opacity-100">About Us</a>
+      <a href="city-listing.html" class="opacity-90 hover:opacity-100">Popular Destinations</a>
+      <a href="city-listing.html" class="opacity-90 hover:opacity-100">Our Packages</a>
+      <a href="mailto:help@tourguide.example" class="opacity-90 hover:opacity-100">Help</a>
+    </nav>
+    <a href="my-profile.html" class="bg-gold text-navy text-sm font-semibold px-6 py-2.5 rounded">Sign In</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative h-[560px] flex items-center justify-center text-center overflow-hidden">
+  <img src="img/beach-hero.jpg?w=1600&q=80" class="absolute inset-0 w-full h-full object-cover" alt="Beach aerial view" />
+  <div class="absolute inset-0 bg-teal-900/10"></div>
+  <div class="relative z-10 max-w-2xl px-6">
+    <h1 class="text-4xl md:text-5xl font-semibold text-navy mb-4">We Find The Best Tours For You</h1>
+    <p class="text-navy/80 text-sm md:text-base mb-6 max-w-lg mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    <button type="button" class="mx-auto flex items-center gap-3 text-navy font-medium" aria-label="Watch video">
+      <span class="w-11 h-11 rounded-full bg-white/80 flex items-center justify-center shadow">
+        <svg class="w-4 h-4 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M6 4l12 6-12 6V4z"/></svg>
+      </span>
+      Watch Video
+    </button>
+  </div>
+</section>
+
+<!-- SEARCH BAR -->
+<div class="max-w-5xl mx-auto -mt-8 relative z-10 px-6">
+  <div class="bg-white rounded-2xl shadow-xl grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+    <div class="flex items-center gap-3 px-6 py-5">
+      <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      <div>
+        <p class="text-xs text-gray-400">Location</p>
+        <p class="text-sm font-medium">Search For A Destination</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 px-6 py-5">
+      <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-4a4 4 0 11-8 0 4 4 0 018 0zm6 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      <div>
+        <p class="text-xs text-gray-400">Guests</p>
+        <p class="text-sm font-medium">How Many Guests?</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 px-6 py-5">
+      <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      <div>
+        <p class="text-xs text-gray-400">Date</p>
+        <p class="text-sm font-medium">Pick A Date</p>
+      </div>
+    </div>
+    <div class="flex items-center p-3">
+      <button class="w-full bg-gold text-navy font-semibold rounded-xl py-3">Search</button>
+    </div>
+  </div>
+</div>
+
+<!-- EXPLORE POPULAR CITIES -->
+<section class="max-w-6xl mx-auto px-6 pt-20 pb-6 text-center">
+  <h2 class="text-3xl font-semibold mb-3">Explore Popular Cities</h2>
+  <p class="text-gray-500 max-w-lg mx-auto text-sm mb-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+  <div class="flex flex-wrap justify-center gap-3 mb-10">
+    <button class="px-5 py-2 rounded-full border border-gray-200 text-sm hover:border-teal">New York</button>
+    <button class="px-5 py-2 rounded-full border border-gray-200 text-sm hover:border-teal">California</button>
+    <button class="px-5 py-2 rounded-full bg-teal text-white text-sm">Alaska</button>
+    <button type="button" class="px-5 py-2 rounded-full border border-gray-200 text-sm hover:border-teal">Sidney</button>
+    <button class="px-5 py-2 rounded-full border border-gray-200 text-sm hover:border-teal">Dubai</button>
+    <button class="px-5 py-2 rounded-full border border-gray-200 text-sm hover:border-teal">London</button>
+    <button class="px-5 py-2 rounded-full border border-gray-200 text-sm hover:border-teal">Tokyo</button>
+    <button class="px-5 py-2 rounded-full border border-gray-200 text-sm hover:border-teal">Delhi</button>
+  </div>
+
+  <!-- Alaska feature -->
+  <div class="relative rounded-3xl overflow-hidden text-left mb-10">
+    <img src="img/alaska-mountains.jpg?w=1600&q=80" class="w-full h-80 object-cover" alt="Alaska mountains" />
+    <div class="absolute left-6 right-6 -bottom-10 md:left-10 md:right-10 md:-bottom-12 bg-white rounded-2xl shadow-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <h3 class="text-2xl font-semibold mb-2">Alaska</h3>
+        <p class="text-gray-500 text-sm max-w-md">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet mollit. Exercitation veniam consequat sunt mollit.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 text-xs font-medium">
+        <span class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-pink-50 text-pink-500">🚌 Public Transportations</span>
+        <span class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-green-50 text-green-600">🌲 Nature &amp; Adventure</span>
+        <span class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-yellow-50 text-yellow-600">🚕 Private Transportations</span>
+        <span class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-red-50 text-red-500">💼 Business Tours</span>
+        <span class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-blue-50 text-blue-500">📍 Local Visit</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOUR CARDS -->
+<section class="max-w-6xl mx-auto px-6 pt-16 pb-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- card template x4 -->
+    <a href="city-tour.html" class="block rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+      <img src="img/mountain-landscape.jpg?w=600&q=80" class="w-full h-40 object-cover" alt="Westminster to Greenwich" />
+      <div class="p-4">
+        <h4 class="font-semibold text-sm mb-2">London: Westminster to Greenwich River Thames</h4>
+        <div class="flex items-center gap-3 text-xs text-gray-400 mb-3">
+          <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-gray-400">★★★★☆ 584 reviews</span>
+          <span class="text-teal font-semibold">$35.00</span>
+        </div>
+      </div>
+    </a>
+    <a href="city-tour.html" class="block rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+      <img src="img/aurora.jpg?w=600&q=80" class="w-full h-40 object-cover" alt="Vintage Double Decker Bus" />
+      <div class="p-4">
+        <h4 class="font-semibold text-sm mb-2">London: Vintage Double Decker Bus &amp; Thames</h4>
+        <div class="flex items-center gap-3 text-xs text-gray-400 mb-3">
+          <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-gray-400">★★★★☆ 584 reviews</span>
+          <span class="text-teal font-semibold">$35.00</span>
+        </div>
+      </div>
+    </a>
+    <a href="city-tour.html" class="block rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+      <img src="img/lake.jpg?w=600&q=80" class="w-full h-40 object-cover" alt="Magic of London Tour" />
+      <div class="p-4">
+        <h4 class="font-semibold text-sm mb-2">London: Magic of London Tour with Afternoon Tea</h4>
+        <div class="flex items-center gap-3 text-xs text-gray-400 mb-3">
+          <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-gray-400">★★★★☆ 584 reviews</span>
+          <span class="text-teal font-semibold">$35.00</span>
+        </div>
+      </div>
+    </a>
+    <a href="city-tour.html" class="block rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+      <img src="img/forest-fields.jpg?w=600&q=80" class="w-full h-40 object-cover" alt="Magic of London Tour" />
+      <div class="p-4">
+        <h4 class="font-semibold text-sm mb-2">London: Magic of London Tour with Afternoon Tea</h4>
+        <div class="flex items-center gap-3 text-xs text-gray-400 mb-3">
+          <span>⏱ 2 hours</span><span>🚐 Transport</span><span>👪 Family</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-gray-400">★★★★☆ 584 reviews</span>
+          <span class="text-teal font-semibold">$35.00</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- TRENDING BANNER -->
+<section class="relative mt-16 mb-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-r from-purple-500 via-fuchsia-400 to-teal-400 py-14 px-8 md:px-16 flex flex-col md:flex-row items-center gap-10">
+      <img src="img/alaska-wildlife.jpg?w=500&q=80" class="w-52 h-52 rounded-full object-cover ring-8 ring-white/20" alt="Wildlife of Alaska" />
+      <div class="text-white text-center md:text-left">
+        <span class="inline-block bg-teal text-xs font-semibold px-3 py-1 rounded-full mb-3">TRENDING NOW</span>
+        <h3 class="text-2xl font-semibold mb-2">Wildlife of Alaska</h3>
+        <p class="text-sm opacity-90 mb-1">📍 Alaska, USA &nbsp; ★★★★☆ 4.9 (300 reviews)</p>
+        <p class="text-sm opacity-90 max-w-md mb-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt mollit.</p>
+        <div class="flex items-center justify-center md:justify-start gap-3">
+          <button class="bg-gold text-navy font-semibold text-sm px-6 py-2.5 rounded-full">Book Now</button>
+          <button class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">♡</button>
+          <button class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">↗</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED DESTINATIONS -->
+<section class="max-w-6xl mx-auto px-6 py-6">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-semibold mb-2">Featured Destinations</h2>
+      <p class="text-gray-500 text-sm max-w-md">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+    </div>
+    <div class="hidden md:flex items-center gap-2">
+      <button class="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center">‹</button>
+      <button class="w-9 h-9 rounded-full bg-gold flex items-center justify-center">›</button>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-5 overflow-x-auto">
+    <a href="city-tour.html" class="rounded-2xl overflow-hidden border border-gray-100">
+      <img src="img/mountain-landscape.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="destination" />
+      <div class="p-3">
+        <p class="text-xs font-semibold mb-1">Westminster to Greenwich</p>
+        <p class="text-teal text-sm font-semibold">$35.00</p>
+      </div>
+    </a>
+    <a href="city-tour.html" class="rounded-2xl overflow-hidden border border-gray-100">
+      <img src="img/aurora.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="destination" />
+      <div class="p-3">
+        <p class="text-xs font-semibold mb-1">Vintage Double Decker Bus</p>
+        <p class="text-teal text-sm font-semibold">$35.00</p>
+      </div>
+    </a>
+    <a href="city-tour.html" class="rounded-2xl overflow-hidden border border-gray-100">
+      <img src="img/lake.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="destination" />
+      <div class="p-3">
+        <p class="text-xs font-semibold mb-1">Magic of London Tour</p>
+        <p class="text-teal text-sm font-semibold">$35.00</p>
+      </div>
+    </a>
+    <a href="city-tour.html" class="rounded-2xl overflow-hidden border border-gray-100">
+      <img src="img/forest-fields.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="destination" />
+      <div class="p-3">
+        <p class="text-xs font-semibold mb-1">Magic of London Tour</p>
+        <p class="text-teal text-sm font-semibold">$35.00</p>
+      </div>
+    </a>
+    <a href="city-tour.html" class="rounded-2xl overflow-hidden border border-gray-100 hidden md:block">
+      <img src="img/mountain-landscape.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="destination" />
+      <div class="p-3">
+        <p class="text-xs font-semibold mb-1">Westminster to Greenwich</p>
+        <p class="text-teal text-sm font-semibold">$35.00</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- MOBILE APP -->
+<section class="my-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="relative rounded-3xl overflow-hidden bg-gradient-to-r from-teal-500 to-cyan-600 py-14 px-8 md:px-16 flex flex-col md:flex-row items-center gap-10">
+      <img src="img/mobile-app.jpg?w=400&q=80" class="w-48 rounded-2xl shadow-2xl hidden sm:block" alt="app preview" />
+      <div class="text-white text-center md:text-left">
+        <h3 class="text-2xl font-semibold mb-2">Smart City Tour Mobile App</h3>
+        <p class="text-sm opacity-90 mb-1">Available on iOS &amp; Android</p>
+        <p class="text-sm opacity-90 max-w-md mb-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt mollit.</p>
+        <div class="flex items-center justify-center md:justify-start gap-3">
+          <button class="bg-gold text-navy font-semibold text-sm px-5 py-2.5 rounded-full">Download For iOS</button>
+          <button class="bg-gold text-navy font-semibold text-sm px-5 py-2.5 rounded-full">Download For Android</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-semibold mb-2">From The Gallery</h2>
+      <p class="text-gray-500 text-sm max-w-md">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+    </div>
+    <button class="bg-navy text-white text-sm px-5 py-2.5 rounded-lg">View All Images</button>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="img/rainforest.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/lake.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/snowy-mountain.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/forest-fields.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/travel-landscape.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/mountain-lake.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+    <img src="img/wildlife-bird.jpg?w=400&q=80" class="w-full h-36 object-cover rounded-xl" alt="gallery" />
+  </div>
+</section>
+
+<!-- LATEST STORIES -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-semibold mb-2">Latest Stories</h2>
+      <p class="text-gray-500 text-sm max-w-md">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+    </div>
+    <button class="bg-navy text-white text-sm px-5 py-2.5 rounded-lg">View All Posts</button>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <article>
+      <img src="img/wellness-story.jpg?w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3" alt="story" />
+      <p class="text-xs text-gray-400 mb-1">Jackie Moncado</p>
+      <h4 class="font-semibold text-sm">7 Signs and Symptoms of Iodine Deficiency</h4>
+    </article>
+    <article>
+      <img src="img/sleep-story.jpg?w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3" alt="story" />
+      <p class="text-xs text-gray-400 mb-1">Jackie Moncado</p>
+      <h4 class="font-semibold text-sm">How to Fix Your Sleep Schedule: 7 Easy Ways</h4>
+    </article>
+    <article>
+      <img src="img/cinnamon-story.jpg?w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3" alt="story" />
+      <p class="text-xs text-gray-400 mb-1">Jackie Moncado</p>
+      <h4 class="font-semibold text-sm">10 Proven Health Benefits of Cinnamon</h4>
+    </article>
+    <article>
+      <img src="img/turmeric-story.jpg?w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3" alt="story" />
+      <p class="text-xs text-gray-400 mb-1">Jackie Moncado</p>
+      <h4 class="font-semibold text-sm">11 Health Benefits of Turmeric and Curcumin</h4>
+    </article>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy text-white mt-10">
+  <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+    <div>
+      <p class="font-semibold mb-4">Language</p>
+      <select class="w-full bg-white/10 rounded-lg px-3 py-2 mb-6 text-white">
+        <option>English (UK)</option>
+      </select>
+      <p class="font-semibold mb-4">Currency</p>
+      <select class="w-full bg-white/10 rounded-lg px-3 py-2 text-white">
+        <option>U.S. Dollar ($)</option>
+      </select>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Company</p>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="index.html#latest-stories">Blog</a></li>
+        <li><a href="index.html">Press Room</a></li>
+        <li><a href="mailto:careers@tourguide.example">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Help</p>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="mailto:help@tourguide.example">Contact us</a></li>
+        <li><a href="mailto:help@tourguide.example">FAQs</a></li>
+        <li><a href="index.html">Terms and conditions</a></li>
+        <li><a href="index.html">Privacy policy</a></li>
+        <li><a href="index.html">Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-4">Payment methods possible</p>
+      <div class="flex flex-wrap gap-2 mb-6" aria-label="Accepted payment methods">
+        <img src="img/mastercard.svg" class="w-12 h-7 object-contain" alt="Mastercard" />
+        <img src="img/visa.svg" class="w-12 h-7 object-contain" alt="Visa" />
+        <img src="img/american-express.svg" class="w-12 h-7 object-contain" alt="American Express" />
+        <img src="img/paypal.svg" class="w-12 h-7 object-contain" alt="PayPal" />
+        <img src="img/google-pay.svg" class="w-12 h-7 object-contain" alt="Google Pay" />
+        <img src="img/apple-pay.svg" class="w-12 h-7 object-contain" alt="Apple Pay" />
+      </div>
+      <p class="font-semibold mb-2">Company</p>
+      <a href="mailto:guides@tourguide.example" class="text-white/70">Become a Tour guide for Us</a>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-6 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
+      <p>Copyright 2021 Tour Guide. All Rights Reserved</p>
+      <div class="flex items-center gap-3">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v8h4v-8h3.3l.7-4H13V9c0-.7.3-1 1-1Z"/></svg>
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.4L2.8 2h6.4l4.4 5.8L18.9 2Zm-1.1 17.8h1.7L8.3 4.1H6.5L17.8 19.8Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".75" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-1.6 0-3.5.4-5.1l1.1-4.6s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.4-.9 3.7-.3 1.1.6 2 1.7 2 2 0 3.6-2.1 3.6-5.1 0-2.7-1.9-4.5-4.7-4.5-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2.1.9 2.7.1.1.1.2.1.4l-.3 1.2c-.1.4-.4.5-.8.3-1.5-.7-2.4-2.8-2.4-4.5 0-3.7 2.7-7.1 7.8-7.1 4.1 0 7.3 2.9 7.3 6.8 0 4.1-2.6 7.4-6.2 7.4-1.2 0-2.3-.6-2.7-1.3l-.7 2.8c-.3 1.2-1.1 2.8-1.6 3.7.9.3 1.9.5 2.9.5A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
