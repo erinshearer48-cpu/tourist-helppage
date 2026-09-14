@@ -13,24 +13,28 @@
 <!-- HEADER -->
 <header class="absolute top-0 left-0 right-0 z-20">
   <div class="max-w-7xl mx-auto flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-6">
-    <a href="index.html" class="text-2xl font-semibold tracking-wide text-white text-center sm:text-left">tour guide</a>
-    <nav class="flex flex-wrap items-center justify-center gap-2 text-[11px] font-medium text-white sm:gap-4 md:gap-8 md:text-sm">
+    <div class="flex items-center justify-between gap-3">
+      <a href="index.html" class="text-2xl font-semibold tracking-wide text-white text-center sm:text-left">tour guide</a>
+      <label for="mobile-menu-index" class="inline-flex cursor-pointer rounded border border-white/40 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white md:hidden">Menu</label>
+    </div>
+    <input id="mobile-menu-index" type="checkbox" class="peer sr-only" />
+    <nav class="hidden peer-checked:flex flex-col items-center gap-2 text-[11px] font-medium text-white sm:gap-4 md:flex md:flex-row md:gap-8 md:text-sm">
       <a href="index.html" class="border-b-2 border-white pb-1">Home</a>
       <a href="index.html" class="opacity-90 hover:opacity-100">About Us</a>
       <a href="city-listing.html" class="opacity-90 hover:opacity-100">Popular Destinations</a>
       <a href="city-listing.html" class="opacity-90 hover:opacity-100">Our Packages</a>
       <a href="mailto:help@tourguide.example" class="opacity-90 hover:opacity-100">Help</a>
     </nav>
-    <a href="my-profile.html" class="bg-gold text-navy text-sm font-semibold px-6 py-2.5 rounded text-center sm:w-auto w-full">Sign In</a>
+    <a href="my-profile.html" class="bg-gold text-navy text-sm font-semibold px-6 py-2.5 rounded text-center sm:w-auto w-full md:w-auto">Sign In</a>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="relative h-[560px] flex items-center justify-center text-center overflow-hidden">
+<section class="relative h-[440px] sm:h-[500px] md:h-[560px] flex items-center justify-center text-center overflow-hidden">
   <img src="img/beach-hero.jpg?w=1600&q=80" class="absolute inset-0 w-full h-full object-cover" alt="Beach aerial view" />
   <div class="absolute inset-0 bg-teal-900/10"></div>
-  <div class="relative z-10 max-w-2xl px-6">
-    <h1 class="text-4xl md:text-5xl font-semibold text-navy mb-4">We Find The Best Tours For You</h1>
+  <div class="relative z-10 max-w-2xl px-6 pt-12 sm:pt-0">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-navy mb-4">We Find The Best Tours For You</h1>
     <p class="text-navy/80 text-sm md:text-base mb-6 max-w-lg mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
     <button type="button" class="mx-auto flex items-center gap-3 text-navy font-medium" aria-label="Watch video">
       <span class="w-11 h-11 rounded-full bg-white/80 flex items-center justify-center shadow">
@@ -42,7 +46,7 @@
 </section>
 
 <!-- SEARCH BAR -->
-<div class="max-w-5xl mx-auto -mt-8 relative z-10 px-6">
+<div class="max-w-5xl mx-auto -mt-4 sm:-mt-8 relative z-10 px-6">
   <div class="bg-white rounded-2xl shadow-xl grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200">
     <div class="flex items-center gap-3 px-6 py-5">
       <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -87,9 +91,9 @@
   </div>
 
   <!-- Alaska feature -->
-  <div class="relative rounded-3xl overflow-hidden text-left mb-10">
+  <div class="relative rounded-3xl overflow-hidden text-left mb-10 pb-24 md:pb-0">
     <img src="img/alaska-mountains.jpg?w=1600&q=80" class="w-full h-80 object-cover" alt="Alaska mountains" />
-    <div class="absolute left-6 right-6 -bottom-10 md:left-10 md:right-10 md:-bottom-12 bg-white rounded-2xl shadow-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div class="absolute left-4 right-4 bottom-4 md:left-10 md:right-10 md:-bottom-12 bg-white rounded-2xl shadow-xl p-5 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div>
         <h3 class="text-2xl font-semibold mb-2">Alaska</h3>
         <p class="text-gray-500 text-sm max-w-md">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet mollit. Exercitation veniam consequat sunt mollit.</p>
@@ -196,7 +200,7 @@
       <button class="w-9 h-9 rounded-full bg-gold flex items-center justify-center">›</button>
     </div>
   </div>
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-5 overflow-x-auto">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-5 overflow-x-auto">
     <a href="city-tour.html" class="rounded-2xl overflow-hidden border border-gray-100">
       <img src="img/mountain-landscape.jpg?w=400&q=80" class="w-full h-32 object-cover" alt="destination" />
       <div class="p-3">
@@ -308,7 +312,7 @@
 
 <!-- FOOTER -->
 <footer class="bg-navy text-white mt-10">
-  <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+  <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm">
     <div>
       <p class="font-semibold mb-4">Language</p>
       <select class="w-full bg-white/10 rounded-lg px-3 py-2 mb-6 text-white">

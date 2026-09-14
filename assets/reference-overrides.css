@@ -92,6 +92,11 @@ svg {
 }
 
 @media (max-width: 767px) {
+  header.absolute {
+    position: relative;
+    background: rgba(20, 41, 67, 0.96);
+  }
+
   .max-w-7xl,
   .max-w-6xl,
   .max-w-5xl {
@@ -103,7 +108,9 @@ svg {
     padding-right: 1rem;
   }
 
-  footer .grid {
+  footer .grid,
+  footer .max-w-7xl,
+  .footer-grid {
     grid-template-columns: 1fr;
   }
 
@@ -119,6 +126,10 @@ svg {
   header nav {
     width: 100%;
     justify-content: center;
+  }
+
+  .search-card {
+    margin-top: 0.5rem !important;
   }
 }
 

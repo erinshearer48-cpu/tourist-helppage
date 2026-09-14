@@ -13,15 +13,19 @@
 <!-- HEADER -->
 <header class="border-b border-gray-100">
   <div class="max-w-7xl mx-auto flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-5">
-    <a href="index.html" class="text-2xl font-semibold tracking-wide text-center sm:text-left">tour guide</a>
-    <nav class="flex flex-wrap items-center justify-center gap-2 text-[11px] font-medium text-gray-600 sm:gap-4 md:gap-8 md:text-sm">
+    <div class="flex items-center justify-between gap-3">
+      <a href="index.html" class="text-2xl font-semibold tracking-wide text-center sm:text-left">tour guide</a>
+      <label for="mobile-menu-tour" class="inline-flex cursor-pointer rounded border border-gray-300 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-navy md:hidden">Menu</label>
+    </div>
+    <input id="mobile-menu-tour" type="checkbox" class="peer sr-only" />
+    <nav class="hidden peer-checked:flex flex-col items-center gap-2 text-[11px] font-medium text-gray-600 sm:gap-4 md:flex md:flex-row md:gap-8 md:text-sm">
       <a href="index.html" class="hover:text-navy">Home</a>
       <a href="index.html" class="hover:text-navy">About Us</a>
       <a href="city-listing.html" class="hover:text-navy">Popular Destinations</a>
       <a href="city-listing.html" class="hover:text-navy">Our Packages</a>
       <a href="mailto:help@tourguide.example" class="hover:text-navy">Help</a>
     </nav>
-    <a href="my-profile.html" class="bg-gold text-navy text-sm font-semibold px-6 py-2.5 rounded text-center w-full sm:w-auto">Sign In</a>
+    <a href="my-profile.html" class="bg-gold text-navy text-sm font-semibold px-6 py-2.5 rounded text-center w-full sm:w-auto md:w-auto">Sign In</a>
   </div>
 </header>
 
@@ -34,7 +38,7 @@
       <p class="text-sm text-gray-500 mb-4">📍 Gothenburg &nbsp;|&nbsp; ★★★★★ (348 reviews)</p>
 
       <img src="img/mountain-valley.jpg?w=1000&q=80" class="w-full h-80 object-cover rounded-2xl mb-3" alt="Mountain landscape" />
-      <div class="grid grid-cols-6 gap-2 mb-8">
+      <div class="grid grid-cols-3 gap-2 mb-8 sm:grid-cols-6">
         <img src="img/rainforest.jpg?w=200&q=80" class="w-full h-16 object-cover rounded-lg" alt="thumb" />
         <img src="img/mountain-lake.jpg?w=200&q=80" class="w-full h-16 object-cover rounded-lg" alt="thumb" />
         <img src="img/green-leaves.jpg?w=200&q=80" class="w-full h-16 object-cover rounded-lg" alt="thumb" />
@@ -147,7 +151,7 @@
 
     <!-- RIGHT: BOOKING CARD -->
     <div class="lg:col-span-1">
-      <div class="border border-gray-200 rounded-2xl p-6 sticky top-6">
+      <div class="border border-gray-200 rounded-2xl p-6 lg:sticky lg:top-6">
         <h3 class="font-semibold mb-4">Booking</h3>
         <label class="text-xs text-gray-400 block mb-1">From</label>
         <input type="date" value="2021-10-12" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mb-4" />
@@ -269,10 +273,10 @@
         <p class="text-gold text-lg">★★★★☆</p>
       </div>
       <div class="space-y-2 text-sm">
-        <div class="flex items-center gap-3"><span class="w-28 text-gray-500">Guide</span><div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gold" style="width:96%"></div></div><span class="text-gray-500">4.8</span></div>
-        <div class="flex items-center gap-3"><span class="w-28 text-gray-500">Transportation</span><div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gold" style="width:60%"></div></div><span class="text-gray-500">3.0</span></div>
-        <div class="flex items-center gap-3"><span class="w-28 text-gray-500">Value for money</span><div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gold" style="width:90%"></div></div><span class="text-gray-500">4.5</span></div>
-        <div class="flex items-center gap-3"><span class="w-28 text-gray-500">Safety</span><div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gold" style="width:80%"></div></div><span class="text-gray-500">4.0</span></div>
+        <div class="flex items-center gap-3"><span class="min-w-[90px] text-gray-500 sm:min-w-[112px]">Guide</span><div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gold" style="width:96%"></div></div><span class="text-gray-500">4.8</span></div>
+        <div class="flex items-center gap-3"><span class="min-w-[90px] text-gray-500 sm:min-w-[112px]">Transportation</span><div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gold" style="width:60%"></div></div><span class="text-gray-500">3.0</span></div>
+        <div class="flex items-center gap-3"><span class="min-w-[90px] text-gray-500 sm:min-w-[112px]">Value for money</span><div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gold" style="width:90%"></div></div><span class="text-gray-500">4.5</span></div>
+        <div class="flex items-center gap-3"><span class="min-w-[90px] text-gray-500 sm:min-w-[112px]">Safety</span><div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-gold" style="width:80%"></div></div><span class="text-gray-500">4.0</span></div>
       </div>
     </div>
 
