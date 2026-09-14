@@ -8,6 +8,7 @@
 body {
   color: var(--reference-navy);
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
 }
 
 h1,
@@ -15,6 +16,14 @@ h2,
 h3,
 h4 {
   font-family: Georgia, "Times New Roman", serif;
+}
+
+header {
+  letter-spacing: 0.01em;
+}
+
+header nav a {
+  letter-spacing: 0.02em;
 }
 
 header .text-2xl {
@@ -95,6 +104,21 @@ svg {
   header.absolute {
     position: relative;
     background: rgba(20, 41, 67, 0.96);
+  }
+
+  .hero-home {
+    min-height: 420px;
+    height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .hero-home img {
+    filter: saturate(1.05) contrast(1.03);
+  }
+
+  .hero-home .relative.z-10 {
+    padding-top: 0.5rem;
   }
 
   .max-w-7xl,
