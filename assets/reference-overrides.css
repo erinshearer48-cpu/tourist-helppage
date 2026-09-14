@@ -76,3 +76,81 @@ footer .bg-white\/10 {
 footer a:hover {
   color: #fff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .max-w-7xl,
+  .max-w-6xl,
+  .max-w-5xl {
+    max-width: 100%;
+  }
+
+  .px-6 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-wrap.gap-3 {
+    justify-content: center;
+  }
+
+  .header-nav,
+  header nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+
+  .text-3xl {
+    font-size: 2rem;
+  }
+
+  .text-2xl {
+    font-size: 1.6rem;
+  }
+
+  .rounded-3xl {
+    border-radius: 1.25rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: column;
+  }
+
+  .home-cta-buttons,
+  .flex.items-center.justify-center.md\:justify-start.gap-3 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home-cta-buttons > button,
+  .flex.items-center.justify-center.md\:justify-start.gap-3 > button {
+    width: 100%;
+  }
+}
